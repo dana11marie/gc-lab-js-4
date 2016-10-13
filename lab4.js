@@ -39,7 +39,7 @@ var total = 0;
 var container = document.getElementById('groceryList');
 
 groceries.forEach(function(element){
-  var listItem = doument.createElement('li');
+  var listItem = document.createElement('li');
   listItem.innerHTML = element.name + ": " + element.price;
   container.appendChild(listItem);
   //var listTotal = document.createElement('li');
