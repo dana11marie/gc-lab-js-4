@@ -22,15 +22,15 @@ groceryList.forEach(function(element){
 //LAB 4 - ANSWER
 var groceries = [
   {
-    name: "apples",
+    name: "Apples",
     price: 1
   },
   {
-    name: "bread",
+    name: "Bread",
     price: 2
   },
   {
-    name: "milk",
+    name: "Milk",
     price: 3
   }
 ];
@@ -40,11 +40,11 @@ var container = document.getElementById('groceryList');
 
 groceries.forEach(function(element){
   var listItem = document.createElement('li');
-  listItem.innerHTML = element.name + ": " + element.price;
+  listItem.innerHTML = element.name + ": $" + element.price;
   container.appendChild(listItem);
   total += element.price;
 });
 
 var totalContainer = document.createElement('li');
-totalContainer.innerHTML = "Total: " + total; 
-container.appendChild(total);
+totalContainer.innerHTML = "Total: $" + total;
+container.appendChild(totalContainer);
