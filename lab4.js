@@ -42,7 +42,9 @@ groceries.forEach(function(element){
   var listItem = document.createElement('li');
   listItem.innerHTML = element.name + ": " + element.price;
   container.appendChild(listItem);
-  //var listTotal = document.createElement('li');
-  //listTotal.innerHTML = "Total: " + total += element.price;
-  //container.appendChild(listTotal);
+  total += element.price;
 });
+
+var totalContainer = document.createElement('li');
+totalContainer.innerHTML = "Total: " + total; 
+container.appendChild(total);
